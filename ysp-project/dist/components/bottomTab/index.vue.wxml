@@ -1,0 +1,14 @@
+<template name="b781e86a">
+  <view class="_div data-v-23acdeda tabBox">
+    <view class="_div data-v-23acdeda bottomTab">
+      <view class="_div data-v-23acdeda tabItem" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+        <image class="_img data-v-23acdeda tabIcon homeIcon" src="/static/images/tab_home.png"></image>
+        <view class="_p data-v-23acdeda tabText">首页</view>
+      </view>
+      <view class="_div data-v-23acdeda tabItem"><button open-type="share" class="_button data-v-23acdeda shareBtn">
+          <image class="_img data-v-23acdeda shareIcon" src="/static/images/tab_share.png"></image>
+          <view class="_p data-v-23acdeda tabText">分享</view>
+        </button></view>
+    </view>
+  </view>
+</template>

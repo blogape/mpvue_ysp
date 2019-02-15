@@ -1,0 +1,33 @@
+<template name="07074edc">
+  <view class="_div data-v-40df30ba articles">
+    <view wx:if="{{fatherComponent == 'themrecipe'}}" class="_ul data-v-40df30ba">
+      <view wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0-'+index}}" data-comkey="{{$k}}" wx:for="{{themeDetailList}}" wx:for-index="index" wx:for-item="item" class="_li data-v-40df30ba">
+        <view class="_div data-v-40df30ba img">
+          <image src="{{item.coverimg}}" mode="widthFix" class="_img data-v-40df30ba"></image>
+        </view>
+        <view class="_div data-v-40df30ba content">
+          <view class="_div data-v-40df30ba name">{{item.title}}</view>
+          <view class="_div data-v-40df30ba author">
+            {{item.nickname}} <label class="_span data-v-40df30ba">{{item.updateTime?item.updateTime:item.createTime}}</label></view>
+          <view class="_div data-v-40df30ba describle">
+            <image src="/static/images/icon_look.png" alt class="_img data-v-40df30ba"></image><label class="_span data-v-40df30ba">{{item.readCount}}</label>
+            <image class="_img data-v-40df30ba star" src="/static/images/tab_collect.png" alt></image><label class="_span data-v-40df30ba">{{item.collectCount}}</label>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view wx:if="{{fatherComponent == 'index'}}" class="_ul data-v-40df30ba">
+      <view wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'1-'+index}}" data-comkey="{{$k}}" wx:for="{{articlesList}}" wx:for-index="index" wx:for-item="item" class="_li data-v-40df30ba">
+        <view class="_div data-v-40df30ba img">
+          <image src="{{item.image}}" class="_img data-v-40df30ba"></image>
+        </view>
+        <view class="_div data-v-40df30ba content">
+          <view class="_div data-v-40df30ba name">{{item.title}}</view>
+          <view class="_div data-v-40df30ba author">
+            {{item.authorName}} <label class="_span data-v-40df30ba">{{item.updateTime?item.updateTime:item.createTime}}</label></view>
+          <view class="_div data-v-40df30ba describle">{{item.description}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

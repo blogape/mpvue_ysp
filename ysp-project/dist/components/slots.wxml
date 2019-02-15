@@ -1,0 +1,6 @@
+<import src="/components/bottomTab/index.vue.wxml" />
+<import src="/components/goods/index.vue.wxml" />
+<import src="/components/theme/index.vue.wxml" />
+<import src="/components/articles/index.vue.wxml" />
+<import src="/components/articles/index.vue.wxml" />
+<import src="/components/card/index.vue.wxml" />

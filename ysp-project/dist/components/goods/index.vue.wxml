@@ -1,0 +1,12 @@
+<template name="201df492">
+  <view class="_div data-v-62ae8f74 goods">
+    <view class="_ul data-v-62ae8f74">
+      <view class="_li data-v-62ae8f74 similar-product" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0-'+index}}" data-comkey="{{$k}}" wx:for="{{hotRecipeList}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-62ae8f74 similar-posre">
+          <image src="{{item.coverimg}}" class="_img data-v-62ae8f74 j_rec_goods_pic opa1 ll_fadeIn" loaded="1" mode="widthFix"></image>
+        </view> <label class="_span data-v-62ae8f74 similar-product-text">{{item.title}}</label>
+        <view class="_p data-v-62ae8f74 collect-number">{{item.collectCount}}收藏</view>
+      </view>
+    </view>
+  </view>
+</template>

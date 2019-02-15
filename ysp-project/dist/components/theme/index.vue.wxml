@@ -1,0 +1,16 @@
+<template name="22a3b06a">
+  <view class="_div data-v-015b62f9 them">
+    <view class="_ul data-v-015b62f9">
+      <view wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0-'+index}}" data-comkey="{{$k}}" wx:for="{{themeRecipeList}}" wx:for-index="index" wx:for-item="item" class="_li data-v-015b62f9">
+        <view class="_div data-v-015b62f9 img">
+          <image src="{{item.coverimg}}" mode="widthFix" class="_img data-v-015b62f9"></image>
+        </view>
+        <view class="_i data-v-015b62f9 bg"></view>
+        <view class="_div data-v-015b62f9 text">
+          <view class="_p data-v-015b62f9 name">{{item.title}}</view>
+          <view class="_p data-v-015b62f9 describle">{{item.recipeSize}} 道菜谱</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
